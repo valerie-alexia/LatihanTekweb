@@ -90,7 +90,8 @@
                 return;
             }
 
-            var taskElement = $('<div class="task-border"></div>').text(tugas).dblclick(function() {
+            // delete
+            var taskElement = $('<div class="task-border"></div>').text(tugas).click(function() {
                 $(this).remove();
             });
             $("." + status + " .card-body").append(taskElement);
